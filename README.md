@@ -1,1 +1,1 @@
-# ContactManager
+In this project I tried to copy the design of Contacts iPhone app. In general was not difficult, but I learned that some things can't be done only with SwiftUI framework. For example, to integrate the SearchBar into NavigationBar, I had to make it based on native UISearchBar from UIKit. Also I couldn't implement the funcionality that allows us to move between TextFields pressing return button of keyboard. That functionality only is available in UIKit, for example. Anyway, I hope you like it :)
