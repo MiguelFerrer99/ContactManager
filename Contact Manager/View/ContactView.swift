@@ -14,47 +14,47 @@ struct ContactView: View {
     
     var body: some View {
         VStack {
-            VStack(spacing: 15) {
+            VStack(spacing: 10) {
                 Image(systemName: contact.image)
                     .resizable()
-                    .frame(width: 150, height: 150)
+                    .frame(width: 100, height: 100)
                     .foregroundColor(.white)
                 Text(contact.name)
                     .font(.title)
                     .bold()
                     .padding()
-                HStack(spacing: 5) {
+                HStack {
                     Button {
                         //Message...
                     } label: {
                         VStack {
                             Image(systemName: "message.fill").foregroundColor(.accentColor)
-                            Text("Message").foregroundColor(.accentColor).font(.caption)
-                        }.frame(width: 55).padding().background(Color.init("backgroundButton").opacity(0.3)).cornerRadius(10)
+                            Text("Message").foregroundColor(.accentColor).font(.caption2)
+                        }.frame(width: 50).padding(.all,13).background(Color.init("backgroundButton").opacity(0.3)).cornerRadius(10)
                     }
                     Button {
                         //Mobile...
                     } label: {
                         VStack {
                             Image(systemName: "phone.fill").foregroundColor(.accentColor)
-                            Text("Mobile").foregroundColor(.accentColor).font(.caption)
-                        }.frame(width: 55).padding().background(Color.init("backgroundButton").opacity(0.3)).cornerRadius(10)
+                            Text("Mobile").foregroundColor(.accentColor).font(.caption2)
+                        }.frame(width: 50).padding(.all,13).background(Color.init("backgroundButton").opacity(0.3)).cornerRadius(10)
                     }
                     Button {
                         //Video...
                     } label: {
                         VStack {
                             Image(systemName: "video.fill").foregroundColor(.accentColor)
-                            Text("Video").foregroundColor(.accentColor).font(.caption)
-                        }.frame(width: 55).padding().background(Color.init("backgroundButton").opacity(0.3)).cornerRadius(10)
+                            Text("Video").foregroundColor(.accentColor).font(.caption2)
+                        }.frame(width:50).padding(.all,13).background(Color.init("backgroundButton").opacity(0.3)).cornerRadius(10)
                     }
                     Button {
                         //Mail...
                     } label: {
                         VStack {
                             Image(systemName: "envelope.fill").foregroundColor(.accentColor)
-                            Text("Mail").foregroundColor(.accentColor).font(.caption)
-                        }.frame(width: 55).padding().background(Color.init("backgroundButton").opacity(0.3)).cornerRadius(10)
+                            Text("Mail").foregroundColor(.accentColor).font(.caption2)
+                        }.frame(width: 50).padding(.all,13).background(Color.init("backgroundButton").opacity(0.3)).cornerRadius(10)
                     }
                 }
                 Button {
